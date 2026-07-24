@@ -9,33 +9,73 @@
 <body>
 
   <div class="dashboard-container">
+
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="brand">
-        <img src="./assets/logo.svg" alt="Maison Soleil Logo" class="logo-icon">
+        <!-- Sun Logo SVG -->
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#4D210F" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
         <span class="brand-name">Maison<br>Soleil</span>
       </div>
 
       <nav class="main-nav">
+        <!-- Your Stay -->
         <a href="#" class="nav-item active">
-          <img src="./assets/nav-stay.svg" alt="" class="nav-icon">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"></path>
+            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"></path>
+            <path d="M12 4v6"></path>
+          </svg>
           Your stay
           <span class="nav-badge">1</span>
         </a>
+
+        <!-- The House -->
         <a href="#" class="nav-item">
-          <img src="./assets/nav-house.svg" alt="" class="nav-icon">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
           The house
         </a>
+
+        <!-- Around Town -->
         <a href="#" class="nav-item">
-          <img src="./assets/nav-town.svg" alt="" class="nav-icon">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
           Around town
         </a>
+
+        <!-- Breakfast -->
         <a href="#" class="nav-item">
-          <img src="./assets/nav-breakfast.svg" alt="" class="nav-icon">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
           Breakfast
         </a>
+
+        <!-- Messages -->
         <a href="#" class="nav-item">
-          <img src="./assets/nav-messages.svg" alt="" class="nav-icon">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
           Messages
         </a>
       </nav>
@@ -44,7 +84,17 @@
         <span class="weather-label">TODAY IN CASSIS</span>
         <div class="temp-display">
           <h2 class="temperature">27°</h2>
-          <img src="./assets/weather-icon.svg" alt="Sunny" class="weather-icon">
+          <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="#59410D" stroke-width="2">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
         </div>
         <p class="weather-desc">Sunny • light breeze</p>
       </div>
@@ -120,7 +170,24 @@
 
           <div class="payment-method">
             <span class="method-label">PAID • WISE • GBP</span>
-            <img src="./assets/barcode.png" alt="Barcode" class="barcode-icon">
+            <svg class="barcode-icon" viewBox="0 0 100 30" fill="#555">
+              <rect x="0" width="4" height="30"/>
+              <rect x="6" width="2" height="30"/>
+              <rect x="10" width="6" height="30"/>
+              <rect x="18" width="2" height="30"/>
+              <rect x="22" width="4" height="30"/>
+              <rect x="28" width="8" height="30"/>
+              <rect x="38" width="2" height="30"/>
+              <rect x="42" width="4" height="30"/>
+              <rect x="48" width="6" height="30"/>
+              <rect x="56" width="2" height="30"/>
+              <rect x="60" width="8" height="30"/>
+              <rect x="70" width="4" height="30"/>
+              <rect x="76" width="2" height="30"/>
+              <rect x="80" width="6" height="30"/>
+              <rect x="88" width="4" height="30"/>
+              <rect x="94" width="6" height="30"/>
+            </svg>
           </div>
         </div>
 
@@ -128,7 +195,15 @@
         <div class="card card-welcome fanned-card right-card">
           <div class="card-welcome-header">
             <span class="note-label">WELCOME CARD</span>
-            <img src="./assets/welcome-sun.svg" alt="" class="welcome-sun">
+            <svg class="welcome-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+            </svg>
           </div>
           
           <div class="note-content">
@@ -139,7 +214,9 @@
           
           <div class="card-welcome-footer">
             <div class="profile-pic-container">
-              <img src="./assets/margaux.jpg" alt="Margaux" class="host-profile-pic">
+              <svg viewBox="0 0 24 24" fill="#C4552A">
+                <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 14c-5.33 0-8 2.67-8 4v1h16v-1c0-1.33-2.67-4-8-4z"/>
+              </svg>
             </div>
             <div class="room-details">
               <span class="room-label">ROOM</span>
@@ -157,7 +234,10 @@
         <div class="info-tile tile-arrival">
           <div class="tile-header">
             <div class="tile-icon-wrapper">
-              <img src="./assets/icon-arrival.svg" alt="" class="tile-icon">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
             </div>
             <span class="tile-category">ARRIVAL</span>
             <span class="tile-number">01</span>
@@ -173,7 +253,12 @@
         <div class="info-tile tile-wifi">
           <div class="tile-header">
             <div class="tile-icon-wrapper">
-              <img src="./assets/icon-wifi.svg" alt="" class="tile-icon">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
             </div>
             <span class="tile-category">WIFI</span>
             <span class="tile-number">02</span>
@@ -201,7 +286,13 @@
         <div class="info-tile tile-breakfast">
           <div class="tile-header">
             <div class="tile-icon-wrapper">
-              <img src="./assets/icon-breakfast.svg" alt="" class="tile-icon">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
             </div>
             <span class="tile-category">BREAKFAST</span>
             <span class="tile-number">03</span>
