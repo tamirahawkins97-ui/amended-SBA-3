@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Soleil - Your Stay Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="./assets/logo.svg" alt="Maison Soleil Logo" class="logo-icon">
+        <span class="brand-name">Maison<br>Soleil</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#" class="nav-item active">
+          <img src="./assets/nav-stay.svg" alt="" class="nav-icon">
+          Your stay
+          <span class="nav-badge">1</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="./assets/nav-house.svg" alt="" class="nav-icon">
+          The house
+        </a>
+        <a href="#" class="nav-item">
+          <img src="./assets/nav-town.svg" alt="" class="nav-icon">
+          Around town
+        </a>
+        <a href="#" class="nav-item">
+          <img src="./assets/nav-breakfast.svg" alt="" class="nav-icon">
+          Breakfast
+        </a>
+        <a href="#" class="nav-item">
+          <img src="./assets/nav-messages.svg" alt="" class="nav-icon">
+          Messages
+        </a>
+      </nav>
+
+      <div class="weather-widget">
+        <span class="weather-label">TODAY IN CASSIS</span>
+        <div class="temp-display">
+          <h2 class="temperature">27°</h2>
+          <img src="./assets/weather-icon.svg" alt="Sunny" class="weather-icon">
+        </div>
+        <p class="weather-desc">Sunny • light breeze</p>
+      </div>
+
+      <div class="sidebar-footer">
+        <p class="est">EST. 1987</p>
+        <p class="address">MAISON SOLEIL • 12 RUE DES OLIVIERS • CASSIS</p>
+        <p class="copyright">© 2026 MAISON SOLEIL</p>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+      <header class="main-header">
+        <div class="status-indicator">
+          <span class="dot green"></span>
+          <p class="status-text">BOOKING • CONFIRMED</p>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-secondary">Print receipt</button>
+          <button class="btn btn-primary">Add to calendar</button>
+        </div>
+      </header>
+
+      <section class="welcome-section">
+        <h1 class="welcome-heading">Bienvenue, <span class="guest-name">Lucia.</span></h1>
+      </section>
+
+      <!-- FANNED CARDS AREA -->
+      <div class="card-fan-container">
+        <!-- Receipt Card -->
+        <div class="card card-receipt fanned-card left-card">
+          <div class="receipt-header">
+            <span class="receipt-label">RECEIPT</span>
+            <h3 class="card-title">Your stay</h3>
+            <div class="receipt-meta">
+              <span class="receipt-id">MS-2026<br>0421-AH</span>
+            </div>
+          </div>
+          
+          <div class="dates-grid">
+            <div class="date-check">
+              <span class="date-label">CHECK IN</span>
+              <p class="date-main">25 Apr</p>
+              <p class="date-sub">Saturday • 15:00</p>
+            </div>
+            <div class="date-check">
+              <span class="date-label">CHECK OUT</span>
+              <p class="date-main">29 Apr</p>
+              <p class="date-sub">Wednesday • 11:00</p>
+            </div>
+          </div>
+
+          <div class="line-items">
+            <div class="item">
+              <span class="item-desc">Room • La Garrigue × 4 nights</span>
+              <span class="item-price">€ 620.00</span>
+            </div>
+            <div class="item">
+              <span class="item-desc">Breakfast × 2 guests</span>
+              <span class="item-price">€ 96.00</span>
+            </div>
+            <div class="item">
+              <span class="item-desc">Tourist tax</span>
+              <span class="item-price">€ 14.40</span>
+            </div>
+          </div>
+
+          <div class="receipt-total">
+            <span class="total-label">TOTAL PAID</span>
+            <span class="total-amount">€ 730.40</span>
+          </div>
+
+          <div class="payment-method">
+            <span class="method-label">PAID • WISE • GBP</span>
+            <img src="./assets/barcode.png" alt="Barcode" class="barcode-icon">
+          </div>
+        </div>
+
+        <!-- Welcome Note Card -->
+        <div class="card card-welcome fanned-card right-card">
+          <div class="card-welcome-header">
+            <span class="note-label">WELCOME CARD</span>
+            <img src="./assets/welcome-sun.svg" alt="" class="welcome-sun">
+          </div>
+          
+          <div class="note-content">
+            <p class="host-intro">A note from your host,</p>
+            <h2 class="host-name">Margaux.</h2>
+            <p class="note-body">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat – Poivre – pretending not to notice you.</p>
+          </div>
+          
+          <div class="card-welcome-footer">
+            <div class="profile-pic-container">
+              <img src="./assets/margaux.jpg" alt="Margaux" class="host-profile-pic">
+            </div>
+            <div class="room-details">
+              <span class="room-label">ROOM</span>
+              <h4 class="room-name">La Garrigue</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="hover-tip">♦ HOVER TO FAN ♦</p>
+
+      <!-- INFO TILES -->
+      <div class="info-tiles-grid">
+        <!-- Tile 01: ARRIVAL -->
+        <div class="info-tile tile-arrival">
+          <div class="tile-header">
+            <div class="tile-icon-wrapper">
+              <img src="./assets/icon-arrival.svg" alt="" class="tile-icon">
+            </div>
+            <span class="tile-category">ARRIVAL</span>
+            <span class="tile-number">01</span>
+          </div>
+          <div class="tile-body">
+            <h3 class="tile-title">Check-in from 15:00</h3>
+            <p class="tile-date">Sat, 25 April</p>
+            <p class="tile-desc">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+          </div>
+        </div>
+
+        <!-- Tile 02: WIFI -->
+        <div class="info-tile tile-wifi">
+          <div class="tile-header">
+            <div class="tile-icon-wrapper">
+              <img src="./assets/icon-wifi.svg" alt="" class="tile-icon">
+            </div>
+            <span class="tile-category">WIFI</span>
+            <span class="tile-number">02</span>
+          </div>
+          <div class="tile-body">
+            <h3 class="tile-title">Le Soleil • Guest</h3>
+            <p class="tile-subtitle">Password below</p>
+            <div class="network-details">
+              <div class="network-field">
+                <span class="field-label">NETWORK</span>
+                <span class="field-value">Le Soleil • Guest</span>
+              </div>
+              <div class="network-field">
+                <span class="field-label">PASSWORD</span>
+                <div class="password-group">
+                  <span class="field-value">soleil-2026</span>
+                  <button class="btn-copy">COPY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 03: BREAKFAST -->
+        <div class="info-tile tile-breakfast">
+          <div class="tile-header">
+            <div class="tile-icon-wrapper">
+              <img src="./assets/icon-breakfast.svg" alt="" class="tile-icon">
+            </div>
+            <span class="tile-category">BREAKFAST</span>
+            <span class="tile-number">03</span>
+          </div>
+          <div class="tile-body">
+            <h3 class="tile-title">Served 8 – 10:30</h3>
+            <p class="tile-location">On the terrace</p>
+            <p class="tile-desc">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

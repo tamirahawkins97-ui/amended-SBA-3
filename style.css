@@ -1,0 +1,798 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f7f3ed;
+    color: #2d2926;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 260px;
+    background: #1f2a24;
+    color: #fff;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    color: #d8d3cb;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar nav a:hover,
+.sidebar nav .active {
+    background: #c9a96e;
+    color: #fff;
+}
+
+
+/* Main Content */
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.header p {
+    color: #756d64;
+    margin-top: 8px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #7b705f;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Guest Welcome Section */
+
+.welcome {
+    background: linear-gradient(
+        135deg,
+        #efe5d7,
+        #ffffff
+    );
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #625a51;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
+/* Buttons */
+
+/* --- RESET & GLOBAL STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #E6EAEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+p, span, label, button {
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+
+/* --- MAIN CONTAINER --- */
+.dashboard-container {
+  width: 1440px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 1fr;
+  background-color: #FFF8F1;
+  border-radius: 20px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  background-color: #FFF8F1;
+  border-right: 1px solid #F0E8DD;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo-icon {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #4D210F;
+  line-height: 1.2;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #8C7B71;
+  font-size: 15px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+}
+
+.nav-item:hover {
+  background-color: #F8F1EA;
+  color: #4D210F;
+}
+
+.nav-item.active {
+  background-color: #FFFFFF;
+  color: #4D210F;
+  font-weight: 400;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.nav-icon {
+  width: 18px;
+  margin-right: 15px;
+  opacity: 0.8;
+}
+
+.nav-badge {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #C04321;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Weather Widget */
+.weather-widget {
+  background: #FFD966 url('./assets/weather-bg.png') no-repeat right bottom;
+  background-size: contain;
+  border-radius: 12px;
+  padding: 20px;
+  color: #59410D;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.weather-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.temp-display {
+  display: flex;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: inherit;
+  margin-right: 10px;
+}
+
+.weather-icon {
+  width: 28px;
+}
+
+.weather-desc {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  border-top: 1px solid #F0E8DD;
+  margin-top: 60px;
+  padding-top: 25px;
+  font-size: 10px;
+  color: #BFB4AA;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.sidebar-footer p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+/* --- MAIN CONTENT AREA --- */
+.main-content {
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot.green {
+  background-color: #5EAA7C;
+}
+
+.status-text {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #B2A69A;
+  text-transform: uppercase;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #212121;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #212121;
+  border: 1px solid #E6EAEB;
+}
+
+.btn-secondary:hover {
+  background-color: #F8F8F8;
+}
+
+/* Welcome Section */
+.welcome-section {
+  margin-bottom: 50px;
+}
+
+.welcome-heading {
+  font-size: 32px;
+  color: #212121;
+}
+
+.guest-name {
+  color: #C1624B;
+}
+
+/* --- THE CARD FAN --- */
+.card-fan-container {
+  position: relative;
+  height: 380px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 0;
+  transition: transform 0.4s ease-out, box-shadow 0.4s;
+  transform-style: preserve-3d;
+}
+
+.fanned-card {
+  width: 480px;
+}
+
+/* Left Card: Receipt */
+.left-card {
+  transform: rotateX(5deg) rotateY(-8deg) rotateZ(3deg) translateX(-100px);
+  z-index: 1;
+}
+
+/* Right Card: Welcome Note */
+.right-card {
+  transform: rotateX(-3deg) rotateY(10deg) rotateZ(-3deg) translateX(240px);
+  z-index: 2;
+}
+
+/* Hover Interaction */
+.card-fan-container:hover .left-card {
+  transform: rotateX(0) rotateY(0) rotateZ(0) translateX(-180px);
+}
+
+.card-fan-container:hover .right-card {
+  transform: rotateX(0) rotateY(0) rotateZ(0) translateX(360px);
+}
+
+/* --- Receipt Card Details --- */
+.card-receipt {
+  font-family: inherit;
+  color: #555;
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.receipt-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.receipt-meta {
+  font-size: 10px;
+  color: #BFB4AA;
+  text-align: right;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 35px;
+  border-bottom: 1px dashed #E0E0E0;
+  padding-bottom: 30px;
+}
+
+.date-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #A0A0A0;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.date-main {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #212121;
+}
+
+.date-sub {
+  font-size: 12px;
+  color: #8C7B71;
+}
+
+.line-items {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E6EAEB;
+  padding-bottom: 25px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.item-price {
+  font-weight: 400;
+  color: #212121;
+}
+
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.total-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #B2A69A;
+}
+
+.total-amount {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  color: #212121;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.method-label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #BFB4AA;
+}
+
+.barcode-icon {
+  height: 35px;
+}
+
+/* --- Welcome Card Details --- */
+.card-welcome {
+  background: #C4552A;
+  background: linear-gradient(135deg, #E66F42 0%, #C4552A 100%);
+  color: white;
+  width: 440px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.welcome-sun {
+  width: 25px;
+}
+
+.note-content {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.host-intro {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.host-name {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.note-body {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.card-welcome-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-pic-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.host-profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-details {
+  text-align: right;
+}
+
+.room-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  opacity: 0.7;
+}
+
+.room-name {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Hover Tip */
+.hover-tip {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #CFC1A6;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+/* --- INFO TILES (01, 02, 03) --- */
+.info-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.info-tile {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #F0E8DD;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.tile-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.tile-icon {
+  width: 100%;
+}
+
+.tile-category {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #A0A0A0;
+}
+
+.tile-number {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.tile-arrival .tile-number, 
+.tile-arrival .tile-icon { 
+  color: #C04321; 
+}
+
+.tile-wifi .tile-number, 
+.tile-wifi .tile-icon { 
+  color: #5364C7; 
+}
+
+.tile-breakfast .tile-number, 
+.tile-breakfast .tile-icon { 
+  color: #8F4C6F; 
+}
+
+.tile-title {
+  font-size: 18px;
+  color: #212121;
+  margin-bottom: 3px;
+}
+
+.tile-date, 
+.tile-subtitle, 
+.tile-location {
+  font-size: 12px;
+  color: #8C7B71;
+  margin-bottom: 15px;
+}
+
+.tile-desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Network Specifics in Tile 02 */
+.network-details {
+  background: #F8F8F8;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #E6EAEB;
+}
+
+.network-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.network-field:last-child {
+  margin-bottom: 0;
+}
+
+.field-label {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #BFB4AA;
+  text-transform: uppercase;
+}
+
+.field-value {
+  font-size: 12px;
+  color: #212121;
+  font-weight: 400;
+}
+
+.password-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-copy {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #BFB4AA;
+  background: none;
+  border: 1px solid #E6EAEB;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
